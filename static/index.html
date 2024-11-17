@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="img/image 3.png" alt="logo" id="llogo" />
+        <span>BooksInsert</span>
+        <button onclick="openModal()" id="new">Adicionar</button>
+      </div>
+
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Autor(a)</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="modal-container">
+        <div class="modal">
+          <form>
+            <label for="m-id">ID</label>
+            <input id="m-id" type="number" required />
+
+            <label for="m-nome">Nome</label>
+            <input id="m-nome" type="text" required />
+
+            <label for="m-autor">Autor(a)</label>
+            <input id="m-autor" type="text" required />
+
+            <label>Selecione uma imagem</label>
+            <!-- As 3 imagens que o usuário pode selecionar -->
+            <div class="image-selection">
+              <div class="image-wrapper">
+                <img
+                  src="https://i.pinimg.com/736x/0c/2a/92/0c2a92eaae2837294786c49a40a4ce3a.jpg"
+                  onclick="selectImage(this)"
+                  alt="Imagem 1"
+                />
+                <span class="status">Ler</span>
+              </div>
+              <div class="image-wrapper">
+                <img
+                  src="https://i.pinimg.com/736x/17/32/67/173267eb2d0d1219c59fc3ddb2aab851.jpg"
+                  onclick="selectImage(this)"
+                  alt="Imagem 2"
+                />
+                <span class="status">Lendo</span>
+              </div>
+              <div class="image-wrapper">
+                <img
+				src="https://i.pinimg.com/564x/b0/c5/69/b0c56970489304fbfa0caa67c6fc0022.jpg"
+						
+                  onclick="selectImage(this)"
+                  alt="Imagem 3"
+                />
+                <span class="status">Lido</span>
+              </div>
+            </div>
+
+            <button id="btnSalvar">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
