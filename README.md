@@ -101,11 +101,7 @@ O frontend está localizado em `src/main/resources/static/` e é composto por:
 
 1. Clone o repositório.
 2. Configure o banco de dados no arquivo `src/main/resources/application.properties`.
-3. Execute o comando:
-   ```
-   ./mvnw spring-boot:run
-   ```
-4. O backend estará disponível em `http://localhost:8080`.
+3. O backend estará disponível em `http://localhost:8080`.
 
 ### Frontend
 
