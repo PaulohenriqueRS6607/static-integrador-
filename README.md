@@ -111,3 +111,7 @@ O frontend está localizado em `src/main/resources/static/` e é composto por:
 ---
 
 Se for da escolha do usuário, ele pode apenas trocar a URL do front-end para a URL da hospedagem do banco, desde que a API esteja devidamente exposta e configurada para aceitar requisições externas.
+
+---
+Projeto com conjunto com 
+--Mi02-hub(https://github.com/Mi02-hub)--
