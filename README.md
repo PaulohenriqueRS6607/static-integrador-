@@ -1,7 +1,3 @@
-Read file: bookinsert/src/main/resources/static/index.html
-Read file: bookinsert/src/main/resources/static/script.js
-Ótimo! Agora com o frontend localizado na pasta `/static`, segue uma descrição completa do projeto, incluindo backend, banco de dados e frontend web:
-
 ---
 
 # 📚 Bookinsert App
